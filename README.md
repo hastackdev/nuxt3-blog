@@ -19,18 +19,15 @@ yarn install
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+CREATE DATABASE nuxt3_blog;
+USE nuxt3_blog;
+CREATE TABLE blog (
+    id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    created_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
 
 ## Production
 
